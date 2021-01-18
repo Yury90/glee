@@ -12,6 +12,10 @@
 }
 
 .menu {
+    @extend %myriad-regular;
+    font-size: 15px;
+    line-height: 17px;
+    color: $menu-col;
     &__list-item {
         display: inline-block;
     }
@@ -37,6 +41,7 @@
         background-color: $box-col;
         border-radius: 25px;
         position: relative;
+        margin-right: 18px;
     }
     &__heart {
         position: absolute;
@@ -51,11 +56,17 @@
         display: inline-block;
         text-align: center;
         border-radius: 50%;
+        position: absolute;
+        top: -7px;
+        right: -11px;
+        font-size: 10px;
+        line-height: 16px;
+        @extend %dmsans-regular;
     }
     &__cart {
         position: absolute;
         top: 16px;
-        right: 35px;
+        right: 53px;
     }
     &__box-separator {
         position: absolute;
@@ -65,6 +76,14 @@
         height: 32px;
         background-color: #fff;
         display: inline-block;
+    }
+    &__btn {
+        background-color: $user-btn-col;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 15px 0 14px 0;
+        border-radius: 50%;
     }
 }
 

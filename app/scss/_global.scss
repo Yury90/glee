@@ -1,4 +1,6 @@
-body {}
+body {
+    @extend %rubik-medium;
+}
 
 .container {
     max-width: 1740px;
