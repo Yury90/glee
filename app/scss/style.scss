@@ -12,12 +12,14 @@
 }
 
 .menu {
-    @extend %myriad-regular;
-    font-size: 15px;
-    line-height: 17px;
-    color: $menu-col;
     &__list-item {
         display: inline-block;
+    }
+    &__list-link {
+        @extend %rubik-bold;
+        color: $menu-col;
+        font-size: 15px;
+        line-height: 17px;
     }
     &__list-item+.menu__list-item {
         padding-left: 35px;
