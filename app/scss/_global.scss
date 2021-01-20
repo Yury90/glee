@@ -1,1 +1,9 @@
-body {}
+body {
+    @extend %rubik-bold;
+}
+
+.container {
+    max-width: 1740px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
