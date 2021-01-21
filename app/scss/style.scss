@@ -16,7 +16,7 @@
         display: inline-block;
     }
     &__list-link {
-        @extend %rubik-bold;
+        @extend %rubik-medium;
         color: $menu-col;
         font-size: 15px;
         line-height: 17px;
