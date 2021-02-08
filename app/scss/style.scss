@@ -89,4 +89,95 @@
     }
 }
 
+.footer-top {
+    border-bottom: 1px solid #dae4e9;
+    display: flex;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        @extend %rubik-regular;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 70px 0;
+        color: $footer-text;
+    }
+    &__item+.footer-top__item {
+        margin-left: 30px;
+    }
+    &__logo {
+        margin-bottom: 25px;
+        margin-top: -18px;
+    }
+    &__adress {
+        margin-bottom: 10px;
+        padding-right: 30px;
+    }
+    &__phone,
+    &__email {
+        margin-bottom: 10px;
+    }
+    &__title {
+        margin-bottom: 25px;
+        @extend %dmsans-bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1f2044;
+    }
+    &__list-item+.footer-top__list-item {
+        margin-top: 10px;
+    }
+    &__item-text {
+        margin-bottom: 38px;
+    }
+    &__form-input {
+        border: none;
+        max-width: 168px;
+        width: 100%;
+        height: 38px;
+        background-color: #fef7f0;
+        @extend %dmsans-regular;
+        font-size: 12px;
+        line-height: 13px;
+        padding: 0 15px;
+        &::placeholder {
+            color: #234969;
+        }
+    }
+    &__form-btn {
+        max-width: 98px;
+        width: 100%;
+        height: 38px;
+        background-color: $footer-btn;
+        @extend %dmsans-regular;
+        font-size: 14px;
+        line-height: 21px;
+        border: 0 solid transparent;
+        color: #fff;
+        cursor: pointer;
+        ;
+    }
+}
+
+.footer-bottom {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    @extend %rubik-regular;
+    font-size: 14px;
+    line-height: 16px;
+    color: $footer-text;
+    &__menu-list {
+        display: flex;
+    }
+    &__menu-item+.footer-bottom__menu-item {
+        padding-left: 10px;
+        border-left: 1px solid $footer-text;
+        margin-left: 10px;
+    }
+}
+
+// .footer-top__form .footer-top__form-input::placeholder {
+//     color: #234969;
+// }
 @import 'media';
