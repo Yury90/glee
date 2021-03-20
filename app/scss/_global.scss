@@ -1,15 +1,26 @@
+html,
 body {
-    @extend %rubik-bold;
+  height: 100%;
+}
+
+body {
+  @extend %rubik-bold;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .container {
-    max-width: 1740px;
-    padding: 0 15px;
-    margin: 0 auto;
+  max-width: 1770px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .container-content {
-    max-width: 1230px;
-    padding: 0 30px;
-    margin: 0 auto;
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
