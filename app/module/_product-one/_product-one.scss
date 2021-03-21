@@ -1,0 +1,30 @@
+.product-one {
+  margin: 0 74px;
+  &__features {
+    display: flex;
+  }
+  &__features-item {
+    display: flex;
+    padding: 50px 115px 50px 150px;
+    border-right: 1px solid #e8e4df;
+  }
+  &__features-item:last-child {
+    border-right: none;
+  }
+  &__features-title {
+    @extend %dmsans-bold;
+    font-size: 18px;
+    line-height: 40px;
+    color: $features-title;
+  }
+  &__features-text {
+    @extend %myriad-regular;
+    font-size: 16px;
+    line-height: 30px;
+    color: $features-text;
+  }
+  &__features-icon {
+    object-fit: contain;
+    width: 54px;
+  }
+}
