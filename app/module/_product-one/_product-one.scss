@@ -1,0 +1,127 @@
+.product-one {
+  margin: 0 74px;
+  &__features {
+    display: flex;
+  }
+  &__features-item {
+    display: flex;
+    padding: 50px 115px 50px 150px;
+    border-right: 1px solid #e8e4df;
+  }
+  &__features-item:last-child {
+    border-right: none;
+  }
+  &__features-title {
+    @extend %dmsans-bold;
+    font-size: 18px;
+    line-height: 40px;
+    color: $features-title;
+  }
+  &__features-text {
+    @extend %myriad-regular;
+    font-size: 16px;
+    line-height: 30px;
+    color: $features-text;
+  }
+  &__features-icon {
+    object-fit: contain;
+    width: 54px;
+    margin-right: 30px;
+  }
+  &__title {
+    @extend %dmsans-bold;
+    font-size: 36px;
+    line-height: 40px;
+    color: $product-one-title;
+    text-align: center;
+    padding: 70px 0 30px;
+  }
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+    max-width: 350px;
+  }
+  &__filter-item {
+    @extend %dmsans-bold;
+    font-size: 16px;
+    color: $filter-item;
+    line-height: 18px;
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+  }
+  &__items {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    bottom: -50px;
+    transition: all .3s;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+    path {
+      fill: $user-btn-col;
+    }
+    &+.product-one__item {
+      margin-left: 15px;
+    }
+    &:hover {
+      background-color: $user-btn-col;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  &__box-title {
+    margin-top: 40px;
+    @extend %dmsans-medium;
+    font-style: 16px;
+    line-height: 40px;
+    color: $slider-title;
+  }
+  &__box-price {
+    @extend %dmsans-bold;
+    font-size: 16px;
+    line-height: 40px;
+    color: $user-btn-col;
+  }
+  &__box-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    min-height: 420px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    &:hover {
+      .product-one__items {
+        bottom: 137px;
+      }
+    }
+  }
+  &__box-image {
+    object-fit: scale-down;
+  }
+}
+
+.mixitup-control-active {
+  color: $filter-button-active;
+}
