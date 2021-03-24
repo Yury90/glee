@@ -49,6 +49,7 @@ function styles() {
 function scripts() {
   return src([
       'node_modules/jquery/dist/jquery.js',
+      'node_modules/mixitup/dist/mixitup.js',
       'node_modules/slick-carousel/slick/slick.js',
       'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
       'node_modules/rateyo/src/jquery.rateyo.js',
@@ -83,6 +84,7 @@ function watching() {
   watch(['app/**/*.scss'], styles);
   watch(['app/*.njk'], nunjucks);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+  watch(['app/**/*.html']).on('change', nunjucks);
   watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 

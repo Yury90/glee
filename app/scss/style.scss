@@ -1,92 +1,10 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
-.header {
-    padding: 50px 0;
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-.menu {
-    &__list-item {
-        display: inline-block;
-    }
-    &__list-link {
-        @extend %rubik-bold;
-        color: $menu-col;
-        font-size: 15px;
-        line-height: 17px;
-    }
-    &__list-item+.menu__list-item {
-        padding-left: 35px;
-    }
-}
-
-.user-nav {
-    display: flex;
-    &__search {
-        width: 50px;
-        height: 50px;
-        background-color: $search-col;
-        text-align: center;
-        padding: 17px 0;
-        border-radius: 50%;
-        margin-right: 22px;
-    }
-    &__box {
-        width: 178px;
-        height: 50px;
-        background-color: $box-col;
-        border-radius: 25px;
-        position: relative;
-        margin-right: 18px;
-    }
-    &__heart {
-        position: absolute;
-        top: 16px;
-        left: 43px;
-    }
-    &__heart-num,
-    &__cart-num {
-        width: 16px;
-        height: 16px;
-        background-color: #fff;
-        display: inline-block;
-        text-align: center;
-        border-radius: 50%;
-        position: absolute;
-        top: -7px;
-        right: -11px;
-        font-size: 10px;
-        line-height: 16px;
-        @extend %dmsans-regular;
-    }
-    &__cart {
-        position: absolute;
-        top: 16px;
-        right: 53px;
-    }
-    &__box-separator {
-        position: absolute;
-        top: 9px;
-        left: 89px;
-        width: 1px;
-        height: 32px;
-        background-color: #fff;
-        display: inline-block;
-    }
-    &__btn {
-        background-color: $user-btn-col;
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        padding: 15px 0 14px 0;
-        border-radius: 50%;
-    }
-}
-
+@import '../module/_header/_header';
+@import '../module/_top-slider/_top-slider';
+@import '../module/_product-one/_product-one';
+@import '../module/_footer/_footer';
 @import 'media';

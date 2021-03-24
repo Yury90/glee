@@ -1,0 +1,98 @@
+.top-slider {
+  &__inner {
+    background-color: $box-col;
+    position: relative;
+  }
+  &__item {
+    padding: 100px 185px 85px 300px
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 130px 100px 199px 0px;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 609px;
+      height: 634px;
+      background-image: url('../images/top-slider/ellipse-bg.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__title {
+    @extend %rubik-medium;
+    font-size: 72px;
+    line-height: 70px;
+    color: $slider-title;
+    width: 470px;
+    margin-bottom: 40px;
+  }
+  &__text {
+    @extend %rubik-regular;
+    font-size: 18px;
+    line-height: 30px;
+    color: $menu-col;
+    padding-right: 100px;
+    width: 470px;
+    margin-bottom: 40px;
+  }
+  &__link {
+    color: #fff;
+    @extend %rubik-medium;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 20px 100px 20px 25px;
+    background-color: $footer-btn;
+    position: relative;
+    float: left;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 20px;
+      top: 22px;
+      background-image: url('../images/icons/arrow.png');
+      width: 22px;
+      height: 9px;
+    }
+  }
+  &__image {
+    display: block;
+    z-index: 1;
+    object-fit: contain;
+    margin-bottom: -80px;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 45px;
+  right: 50%;
+  display: flex;
+  @extend %rubik-bold;
+  font-size: 9px;
+  line-height: 10px;
+  button {
+    color: $slider-title;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(253, 227, 204, .8);
+    outline: transparent;
+    transition: all .6s;
+    cursor: pointer;
+  }
+  li+li {
+    margin-left: 10px;
+  }
+  .slick-active {
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
