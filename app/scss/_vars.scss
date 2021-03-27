@@ -12,6 +12,8 @@ $filter-item: #8b8b8b;
 $filter-button-active: #1a1a1a;
 $card-bg: #feefe2;
 $bottom-name: #191919;
+$article-text: #262626;
+$article-date: #222933;
 %dmsans-bold {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
@@ -45,4 +47,12 @@ $bottom-name: #191919;
 %rubik-regular {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}x(#{$numbers});
 }
