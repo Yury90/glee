@@ -84,8 +84,8 @@ function watching() {
   watch(['app/**/*.scss'], styles);
   watch(['app/*.njk'], nunjucks);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/**/*.html']).on('change', nunjucks);
   watch(['app/**/*.html']).on('change', browserSync.reload);
+
 }
 
 function build() {
