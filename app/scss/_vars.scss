@@ -15,45 +15,50 @@ $bottom-name: #191919;
 $article-text: #262626;
 $article-date: #222933;
 $bredcrumbs: #8b8f94;
+$about-border: #ebeef3;
+$about-descr: #4c4c4c;
+$team-prof: #565872;
+$team-link: #f6f6f6;
+$partners-bg: #fef7f0;
 %dmsans-bold {
-  font-family: 'DMSans-Bold', sans-serif;
-  font-weight: 700;
+    font-family: 'DMSans-Bold', sans-serif;
+    font-weight: 700;
 }
 
 %dmsans-medium {
-  font-family: 'DMSans-Medium', sans-serif;
-  font-weight: 500;
+    font-family: 'DMSans-Medium', sans-serif;
+    font-weight: 500;
 }
 
 %dmsans-regular {
-  font-family: 'DMSans-Regular', sans-serif;
-  font-weight: 400;
+    font-family: 'DMSans-Regular', sans-serif;
+    font-weight: 400;
 }
 
 %myriad-regular {
-  font-family: 'Myriad-Pro-Regular', sans-serif;
-  font-weight: 400;
+    font-family: 'Myriad-Pro-Regular', sans-serif;
+    font-weight: 400;
 }
 
 %rubik-bold {
-  font-family: 'Rubik-Bold', sans-serif;
-  font-weight: 700;
+    font-family: 'Rubik-Bold', sans-serif;
+    font-weight: 700;
 }
 
 %rubik-medium {
-  font-family: 'Rubik-Medium', sans-serif;
-  font-weight: 500;
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
 }
 
 %rubik-regular {
-  font-family: 'Rubik-Regular', sans-serif;
-  font-weight: 400;
+    font-family: 'Rubik-Regular', sans-serif;
+    font-weight: 400;
 }
 
 @function max($numbers...) {
-  @return m#{a}x(#{$numbers});
+    @return m#{a}x(#{$numbers});
 }
 
 @function min($numbers...) {
-  @return m#{i}x(#{$numbers});
+    @return m#{i}x(#{$numbers});
 }

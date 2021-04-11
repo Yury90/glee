@@ -1,10 +1,11 @@
 .partners {
-  margin-bottom: 70px;
-  &__inner {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  &__item {
-    object-fit: contain;
-  }
+    padding: 60px 0;
+    background-color: $partners-bg;
+    &__inner {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__item {
+        object-fit: contain;
+    }
 }

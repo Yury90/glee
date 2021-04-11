@@ -31,3 +31,17 @@ main {
   line-height: 40px;
   color: $product-one-title;
 }
+
+.title-blue {
+  @extend %dmsans-bold;
+  font-size: 36px;
+  line-height: 32px;
+  color: $slider-title;
+}
+
+.text-blue {
+  @extend %rubik-regular;
+  font-size: 16px;
+  line-height: 30px;
+  color: $slider-title;
+}
