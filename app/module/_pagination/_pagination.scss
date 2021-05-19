@@ -1,0 +1,29 @@
+.pagination {
+    margin: 50px auto;
+    max-width: 270px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        @extend %rubik-regular;
+        font-size: 16px;
+        line-height: 30px;
+        color: $slider-title;
+    }
+    &__item {
+        border: 1px solid $user-btn-col;
+        &+.pagination__item {
+            margin-left: 17px;
+        }
+    }
+    &__item--active {
+        background-color: $user-btn-col;
+        color: #fff;
+    }
+    &__link {
+        display: block;
+        padding: 11px 20px;
+    }
+    &__next {
+        border: 1px solid $user-btn-col;
+    }
+}

@@ -1,0 +1,322 @@
+.products {
+    margin-right: 30px;
+    &__wrapper {
+        display: flex;
+    }
+    &__filters {
+        flex: 0 0 270px;
+    }
+    &__cards {
+        flex: 1;
+    }
+}
+
+.filter {
+    &__item {
+        margin: 25px 0;
+    }
+    &__title {
+        display: inline-block;
+        @extend %rubik-regular;
+        font-size: 18px;
+        line-height: 20px;
+        color: $slider-title;
+        padding: 16px 58px 16px 0;
+        position: relative;
+        text-transform: uppercase;
+        &::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 38px;
+            top: 25px;
+            right: 0;
+            background-color: $user-btn-col;
+        }
+    }
+    &__content--arrow-down {
+        position: relative;
+        &::after {
+            position: absolute;
+            transform: rotateZ(90deg);
+        }
+    }
+}
+
+.filter-category {
+    &__box {
+        @extend %rubik-regular;
+        font-size: 16px;
+        color: $slider-title;
+        cursor: pointer;
+    }
+    &__content {
+        line-height: 42px;
+        padding: 0 23px 0 14px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            height: 10px;
+            width: 6px;
+            right: 23px;
+            top: 16px;
+            background-image: url('../images/icons/arrow-filter.png');
+        }
+    }
+}
+
+.dropdown {
+    display: none;
+    padding: 0 60px 0 40px;
+    &__item {
+        &+.dropdown__item {
+            margin-top: 15px;
+        }
+    }
+    &__label {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        cursor: pointer;
+    }
+    &__input {
+        @extend %checkbox-hidden;
+        &:checked+.dropdown__checkbox {
+            background-image: url('../images/icons/check-on.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    &__checkbox {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        margin-left: -16px;
+    }
+}
+
+.irs-min,
+.irs-max,
+.irs-to,
+.irs-from {
+    display: none;
+}
+
+.filter-price {
+    &__form {
+        @extend %rubik-regular;
+        font-size: 16px;
+        line-height: 42px;
+        color: $slider-title;
+    }
+    &__label {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__from,
+    &__to {
+        position: relative;
+        padding-left: 10px;
+        &::before {
+            position: absolute;
+            content: '$';
+            left: 0;
+        }
+    }
+}
+
+.irs--flat .irs-bar {
+    top: 28px;
+    height: 2px;
+    background-color: $user-btn-col;
+}
+
+.irs--flat .irs-line {
+    top: 29px;
+    height: 1px;
+    background-color: #c2d2db;
+}
+
+.irs--flat .irs-handle {
+    top: 22px;
+    width: 14px;
+    height: 15px;
+    background-color: $user-btn-col;
+}
+
+.irs--flat .irs-handle>i:first-child {
+    left: 0;
+    background-color: $user-btn-col;
+    width: 1px;
+}
+
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+    background-color: $user-btn-col;
+}
+
+.filter-brand {
+    &__form {
+        @extend %rubik-regular;
+        font-size: 16px;
+        line-height: 42px;
+        color: $slider-title;
+        padding: 0 23px 0 14px;
+    }
+    &__label {
+        .checkbox-span {
+            color: #c4c4c4;
+        }
+    }
+    &__input {
+        @extend %checkbox-hidden;
+        &:checked+.filter-brand__checkbox .checkbox-span {
+            color: $slider-title;
+        }
+    }
+    &__checkbox {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+}
+
+.filter-recent {
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        display: flex;
+        margin: 25px 0;
+    }
+    &__content {
+        @extend %rubik-regular;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__name {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &__price {
+        font-size: 15px;
+        line-height: 16px;
+        padding-right: 10px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '$';
+        }
+    }
+    &__image-box {
+        width: 70px;
+        margin-right: 20px;
+    }
+    &__link {
+        display: block;
+        margin: 0 auto;
+    }
+    &__image {
+        display: block;
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+}
+
+.star {
+    padding: 0;
+}
+
+.products {
+    &__cards {
+        margin-left: 30px;
+    }
+}
+
+.card {
+    margin: 100px 0;
+    display: flex;
+    &__image-box {
+        min-width: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content {
+        @extend %rubik-regular;
+        margin-left: 30px;
+        padding-left: 30px;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 42px;
+        color: $card-title;
+        margin-bottom: 25px;
+    }
+    .star {
+        margin-bottom: 36px;
+    }
+    &__price {
+        font-size: 30px;
+        line-height: 43px;
+        color: $card-title;
+        position: relative;
+        margin-bottom: 36px;
+        &::after {
+            position: absolute;
+            content: '$';
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+        color: $slider-title;
+        margin-bottom: 36px;
+    }
+    &__btn {
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        color: #fff;
+        background-color: $footer-btn;
+        text-transform: uppercase;
+        padding: 10px 51px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    &__items {
+        display: none;
+        padding-top: 26px;
+        position: relative;
+        height: 50px;
+    }
+    &__item-card {
+        background-color: $footer-btn;
+        position: absolute;
+        padding: 13px 16px;
+        top: 0;
+    }
+    &__item-heart {
+        position: absolute;
+        top: 15px;
+        left: 96px;
+        cursor: pointer;
+        path {
+            stroke: $footer-btn;
+            stroke-width: 2px;
+            fill: none;
+        }
+    }
+}
+
+.like--active {
+    path {
+        fill: $footer-btn;
+    }
+}

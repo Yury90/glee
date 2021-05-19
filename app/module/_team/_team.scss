@@ -1,0 +1,91 @@
+.team {
+    padding: 120px 0 20px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__text {
+        margin-bottom: 40px;
+    }
+    &__content {
+        max-width: 310px;
+    }
+    &__link {
+        background-color: $footer-btn;
+        @extend %myriad-regular;
+        color: #ffffff;
+        font-size: 15px;
+        line-height: 55px;
+        border-radius: 5px;
+        padding: 17px 70px 17px 24px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 25px;
+            top: 19px;
+            background-image: url('../images/icons/team-arrow.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 15px;
+            height: 11px;
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    &__item-image {
+        display: block;
+        position: relative;
+        z-index: 1;
+        object-fit: cover;
+        max-width: 100%;
+    }
+    &__item-box {
+        padding: 30px 25px 30px 25px;
+        display: flex;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        margin-top: -60px;
+        background-color: #fff;
+        margin-right: 45px;
+    }
+    &__item-description {}
+    &__item-name {
+        font-size: 22px;
+        line-height: 26px;
+        color: $menu-col;
+        @extend %dmsans-bold;
+        margin-bottom: 10px;
+    }
+    &__item-profession {
+        font-size: 16px;
+        line-height: 30px;
+        color: $team-prof;
+        @extend %rubik-regular;
+    }
+    &__social {
+        display: flex;
+    }
+    &__social-link {
+        width: 40px;
+        height: 40px;
+        background-color: $team-link;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &+.team__social-link {
+            margin-left: 10px;
+        }
+    }
+}

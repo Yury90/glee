@@ -1,0 +1,123 @@
+.about {
+    &__top {
+        padding: 120px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__top-box {
+        max-width: 570px;
+        width: 100%;
+    }
+    &__top-image {
+        max-width: 570px;
+        object-fit: contain;
+    }
+    &__top-content {
+        margin: 100px 0 100px 50px;
+    }
+    &__top-suptitle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 47px;
+    }
+    &__top-number {
+        color: $user-btn-col;
+        @extend %rubik-bold;
+        font-size: 140px;
+        line-height: 32px;
+    }
+    &__top-suptext {
+        @extend %myriad-regular;
+        font-size: 16px;
+        line-height: 30px;
+        color: $slider-title;
+        padding-right: 278px;
+        padding-left: 30px;
+    }
+    &__top-title {
+        margin-bottom: 46px;
+    }
+    &__top-text {
+        margin-bottom: 64px;
+    }
+    &__top-items {
+        display: flex;
+        border-top: 2px solid $about-border;
+        padding-top: 30px;
+        @extend %dmsans-bold;
+        font-size: 36px;
+        line-height: 38px;
+        color: $slider-title;
+    }
+    &__top-item {
+        padding: 20px 0;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: 0;
+            top: 10px;
+            width: 50px;
+            height: 48px;
+        }
+        &:nth-child(1) {
+            padding: 0 27px 0 60px;
+            &::before {
+                background-image: url('../images/icons/project.svg');
+            }
+        }
+        &:nth-child(2) {
+            padding: 0 36px 0 90px;
+            border-left: 1px solid $about-border;
+            border-right: 1px solid $about-border;
+            &::before {
+                background-image: url('../images/icons/speaker.svg');
+                left: 15px;
+            }
+        }
+        &:nth-child(3) {
+            padding: 0 0 0 90px;
+            &::before {
+                background-image: url('../images/icons/medal.svg');
+                left: 15px;
+            }
+        }
+    }
+    &__top-descr {
+        @extend %dmsans-bold;
+        font-size: 16px;
+        line-height: 17px;
+        color: $about-descr;
+    }
+}
+
+.about .about__top-items {
+    padding: 30px 0;
+}
+
+.about-features {
+    padding: 90px 0 85px;
+    background-color: $box-col;
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    &__item {
+        text-align: center;
+    }
+    &__image {
+        margin-bottom: 27px;
+    }
+    &__number {
+        margin-bottom: 27px;
+    }
+    &__text {
+        font-size: 18px;
+    }
+}
