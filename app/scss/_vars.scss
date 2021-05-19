@@ -20,6 +20,8 @@ $about-descr: #4c4c4c;
 $team-prof: #565872;
 $team-link: #f6f6f6;
 $partners-bg: #fef7f0;
+$filter-price-bg-line: #c2d2db;
+$card-title: #333333;
 %dmsans-bold {
     font-family: 'DMSans-Bold', sans-serif;
     font-weight: 700;
@@ -53,6 +55,22 @@ $partners-bg: #fef7f0;
 %rubik-regular {
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
+}
+
+%btn {
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $user-btn-col;
+}
+
+%checkbox-hidden,
+%radio-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
 }
 
 @function max($numbers...) {
